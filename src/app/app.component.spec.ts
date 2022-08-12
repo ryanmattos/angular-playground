@@ -26,10 +26,13 @@ describe('AppComponent', () => {
     expect(app.title).toEqual('angular-playground');
   });
 
-  it('should render title', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    fixture.detectChanges();
-    const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('angular-playground app is running!');
-  });
+  /**
+   * @ngdoc Deprecated, but kept for future reference
+   */
+  // it('should render title', () => {
+  //   const fixture = TestBed.createComponent(AppComponent);
+  //   fixture.detectChanges();
+  //   const compiled = fixture.nativeElement as HTMLElement;
+  //   expect(compiled.querySelector('.content span')?.textContent).toContain('angular-playground app is running!');
+  // });
 });

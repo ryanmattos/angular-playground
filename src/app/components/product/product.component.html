@@ -1,0 +1,5 @@
+<div class="product" *ngIf="!!product">
+   <b>{{product.id}}</b> 
+   <p>{{product.name}}</p>
+   <span>{{product.price | currency:'BRL'}}</span>
+</div>
